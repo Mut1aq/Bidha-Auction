@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 
 const authRoutes = require("./routes/auth");
+const auctionRoutes = require("./routes/auction");
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(express.urlencoded({ extended: true })); // middleware
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(authRoutes);
+app.use("/auction", auctionRoutes);
 
 app.listen(3000, () => {
 	console.log("port 3000");
