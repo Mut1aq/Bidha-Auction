@@ -51,7 +51,6 @@ exports.getIndex = (req, res, next) => {
 			today.substring(today.indexOf("/") + 1, today.lastIndexOf("/"))
 		);
 
-	console.log(countDown);
 	const enterAuction = countDown === 0 && user.wallet > 200 ? true : false;
 	res.render("auction/index", {
 		auctionData,

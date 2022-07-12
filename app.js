@@ -3,6 +3,7 @@ const path = require("path");
 
 const authRoutes = require("./routes/auth");
 const auctionRoutes = require("./routes/auction");
+const basicRoutes = require("./routes/basic");
 
 const app = express();
 
@@ -12,6 +13,10 @@ app.set("views", "views");
 app.use(express.urlencoded({ extended: true })); // middleware
 app.use(express.static(path.join(__dirname, "public")));
 
+// app.use("/", (req, res, next) => {
+// 	res.render("basic/home", {title: "Bidha Auction"});
+// });
+app.use(basicRoutes);
 app.use(authRoutes);
 app.use("/auction", auctionRoutes);
 
