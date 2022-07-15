@@ -1,0 +1,136 @@
+<%- include('../includes/head.ejs') %> <%- include('../includes/header.ejs') %>
+
+<section id="signup-container" class="container mt-5 w-100 bg-white">
+	<h2 id="heading" class="text-center text-grey">Profile</h2>
+	<form action="/user-signup" method="post">
+		<div class="input-group mb-3">
+			<input
+				style="width: 0auto"
+				required
+				type="text"
+				class="form-control"
+				placeholder="First Name"
+				aria-label="FirstName"
+				aria-describedby="basic-addon1"
+				name="user[firstName]"
+			/>
+			<input
+				style="width: 0auto"
+				required
+				type="text"
+				class="form-control"
+				placeholder="Last Name"
+				aria-label="LastName"
+				aria-describedby="basic-addon1"
+				name="user[lastName]"
+			/>
+		</div>
+
+		<div class="input-group mb-3">
+			<input
+				style="width: 0auto"
+				required
+				type="email"
+				class="form-control"
+				placeholder="Email"
+				aria-label="Email"
+				aria-describedby="basic-addon2"
+				name="user[email]"
+			/>
+
+			<select
+				style="width: 0auto"
+				required
+				class="form-select"
+				aria-label="Default select example"
+				name="user[city]"
+			>
+				<!-- <option disabled selected>City</option> -->
+				<option value="1">Amman</option>
+				<option value="2">Salt</option>
+				<option value="3">Irbid</option>
+			</select>
+		</div>
+		<div class="input-group mb-3">
+			<input
+				type="number"
+				placeholder="Phone Number"
+				class="form-control"
+			/>
+		</div>
+
+		<div class="align-items-center">
+			<div class="">
+				<input
+					required
+					type="password"
+					id="inputPassword6"
+					class="form-control"
+					placeholder="Password"
+					aria-describedby="passwordHelpInline"
+					name="user[password]"
+				/>
+				<!-- <button id="submit-button" class="btn btn-primary m-auto mt-3">
+					Change Password
+				</button> -->
+			</div>
+		</div>
+
+		<div id="submit-button" class="text-center">
+			<button type="submit" class="btn btn-primary mt-3">
+				Update Profile
+			</button>
+		</div>
+	</form>
+</section>
+
+<section id="signup-container" class="container mt-5 w-100 bg-white">
+	<h2 id="heading" class="text-center text-grey">Auctions Participated</h2>
+	<div class="container mt-5">
+		<h3 id="heading" class="text-center text-grey">Auction 8</h3>
+		<div class="card w-100">
+			<div class="row">
+				<div class="col">
+					<img
+						src="../imgs/landing-page.jpg"
+						class="card-img-top w-100 h-100"
+						alt="..."
+					/>
+				</div>
+				<div class="col">
+					<img
+						src="../imgs/landing-page.jpg"
+						class="card-img-top w-100 h-100"
+						alt="..."
+					/>
+				</div>
+				<div class="col">
+					<img
+						src="../imgs/landing-page.jpg"
+						class="card-img-top w-100 h-100"
+						alt="..."
+					/>
+				</div>
+			</div>
+
+			<!-- Image Src-->
+			<div class="card-body text-center mt-5">
+				<h5 class="card-title">Car Name</h5>
+				<h5 class="card-title">Car Model</h5>
+				<h5 class="card-title">Car Year</h5>
+				<h5 class="card-title">Car Color</h5>
+				<h5 class="card-title">Car Inspection</h5>
+
+				<a href="#" class="btn btn-primary mt-3">Car Info</a>
+			</div>
+		</div>
+	</div>
+	<br />
+</section>
+
+<%- include("../includes/end.ejs") %>
+<!--
+    Info
+    Auctions Bid info
+
+-->

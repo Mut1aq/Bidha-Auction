@@ -4,6 +4,7 @@ const path = require("path");
 const authRoutes = require("./routes/auth");
 const auctionRoutes = require("./routes/auction");
 const basicRoutes = require("./routes/basic");
+const userRoutes = require("./routes/user");
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // });
 app.use(basicRoutes);
 app.use(authRoutes);
+app.use(userRoutes);
 app.use("/auction", auctionRoutes);
 
 app.listen(3000, () => {
@@ -25,8 +27,8 @@ app.listen(3000, () => {
 });
 
 /**
- * Landing page
- * Auth pages
+ * Landing page (Info about webapp, Help section, org or bidder link)
+ * Auth pages (org)
  * Home page (Ads, [clickable]=Count Down(), Search Bar)
  * Car Info
  * Single Auction
