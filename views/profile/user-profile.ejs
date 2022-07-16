@@ -1,6 +1,38 @@
 <%- include('../includes/head.ejs') %> <%- include('../includes/header.ejs') %>
 
 <section id="signup-container" class="container mt-5 w-100 bg-white">
+	<h2 id="heading" class="text-center text-grey mb-5">Wallet Info</h2>
+	<div class="row">
+		<div class="col">
+			<h3>wallet Info</h3>
+			<span>Balance: <i class="text-success">200$</i></span>
+		</div>
+		<div class="col">
+			<h3>wallet Transaction</h3>
+			<p>
+				Last Transaction: <span class="text-danger">-200$</span> on
+				<span class="text-primary">Auction 8</span>
+			</p>
+		</div>
+		<div class="col">
+			<h3>wallet Top Up</h3>
+			<form action="user/balance" method="post">
+				<input
+					type="number"
+					placeholder="Amount to Add"
+					class="form-control"
+					name=""
+					id=""
+				/>
+				<button type="submit" class="form-control btn btn-primary mt-3">
+					ADD
+				</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+<section id="signup-container" class="container mt-5 w-100 bg-white">
 	<h2 id="heading" class="text-center text-grey">Profile</h2>
 	<form action="/user-signup" method="post">
 		<div class="input-group mb-3">

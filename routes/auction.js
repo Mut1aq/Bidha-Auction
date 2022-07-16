@@ -8,4 +8,6 @@ router.get("/", auctionController.getIndex);
 
 router.get("/info", auctionController.getAuctionInfo);
 
+router.get("/car-info", auctionController.getCarInfo);
+
 module.exports = router;

@@ -1,0 +1,20 @@
+<%- include('../includes/head.ejs') %> <%- include('../includes/header.ejs') %>
+<section
+	id="signup-container"
+	class="container text-center mt-5 w-100 bg-white"
+>
+	<h1>Car Information</h1>
+	<h2 style="color: <%= car.exteriorColor %>"><%= car.brand %></h2>
+	<div class="row">
+		<div class="col-4">
+			<% for(carImage of car.imgs) { %>
+			<img
+				src="<%= carImage %>"
+				class="card-img-top w-25 h-25"
+				alt="..."
+			/>
+			<% } %>
+		</div>
+	</div>
+</section>
+<%- include("../includes/end.ejs") %>
