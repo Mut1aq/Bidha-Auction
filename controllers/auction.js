@@ -1,3 +1,23 @@
+const car = {
+	brand: "BMW",
+	model: "x",
+	year: 2020,
+	exteriorColor: "red",
+	interiorColor: "black",
+	gearType: "auto",
+	Fuel: 1000,
+	milage: 100000,
+	carInspection: "Good",
+	notes: "none",
+	imgs: [
+		"../imgs/landing-page.jpg",
+		"../imgs/landing-page.jpg",
+		"../imgs/landing-page.jpg",
+		"../imgs/landing-page.jpg",
+		"../imgs/landing-page.jpg",
+	],
+};
+
 let auctionData = [
 	{
 		date: new Date("July 11, 2022 03:24:00"),
@@ -62,4 +82,8 @@ exports.getIndex = (req, res, next) => {
 
 exports.getAuctionInfo = (req, res, next) => {
 	res.render("auction/info", { auctionData, title: "Auction Info" });
+};
+
+exports.getCarInfo = (req, res, next) => {
+	res.render("auction/car", { title: "Car Info", car });
 };
