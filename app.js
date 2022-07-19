@@ -27,18 +27,18 @@ app.listen(3000, () => {
 });
 
 /**
- * Landing page (Info about webapp, Help section, org or bidder link)
- * Auth pages (org)
+ * Landing page (Info about webapp, Help section, org or bidder link) Done
+ * Auth pages (org) Done
  * Home page (Ads, [clickable]=Count Down(), Search Bar)
  * Car Info
  * Single Auction
- * Profile page (users, Wallet) Middleware
- * Edit Profile page
+ * Profile page (users, Wallet) Middleware Done
+ * Edit Profile page Done
  * Profile page (organizer)
  * Edit Profile Page
  * Add Car
  * Pervious Auctions (Info about cars)
  * About Us (Info about the team and tutorial for the web application)
- * Contact Us
+ * Contact Us Done
  * Admin Panel
  */

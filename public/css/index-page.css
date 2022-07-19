@@ -1,14 +1,29 @@
 #main-container {
-	background-color: #aab8c2;
+	background-color: #98c5e4;
 }
+
+/* #links {
+	background-color: #f1f1f1;
+}
+
 
 /* #info {
 	margin-right: 50px;
 } */
+
+a.anchor {
+	text-decoration: none !important;
+}
+ul {
+	list-style: none;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
 .sidebar {
 	margin: 0;
 	padding: 0;
-	width: 200px;
+	width: 20%;
 	background-color: #f1f1f1;
 	height: 50%;
 }
