@@ -1,85 +1,46 @@
 <%- include('../includes/head.ejs') %> <%- include('../includes/header.ejs') %>
-<div class="d-flex justify-content-between">
-	<div class="col sidebar text-center">
-		<ul>
-			<li>
-				<a class="anchor active" href="/">
-					<h3 class="home-links">Home</h3>
-				</a>
-			</li>
-			<li>
-				<a class="anchor" href="/user-profile">
-					<h3 class="home-links">Profile</h3>
-				</a>
-			</li>
-			<li>
-				<a class="anchor" href="#">
-					<h3 class="home-links">Previous Auction</h3>
-				</a>
-			</li>
-			<li>
-				<a class="anchor" href="#">
-					<h3 class="home-links">Add Car</h3>
-				</a>
-			</li>
-			<li>
-				<a class="anchor" href="/contact-us">
-					<h3 class="home-links">Contact Us</h3></a
+
+<section id="countdown" class="">
+	<div class="wrapper">
+		<div class="text-center mt-5">
+			<div id="buttons">
+				<a class="btn btn-primary m-auto" href="/auction/info"
+					>Auction Info</a
 				>
-			</li>
-			<li>
-				<a class="anchor" href="#">
-					<h3 class="home-links">About Us</h3>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div id="main-container" class="container mt-5">
-		<div class="row">
-			<div class="col">
-				<div class="">
-					<h2 class="">1 Day 1 Hour 50 Minutes 30 Seconds</h2>
-				</div>
-				<div>
-					<a class="btn btn-primary" href="/auction/info"
-						>Auction Info</a
-					>
+				<a class="btn btn-primary m-auto" href="/auction/bid"
+					>Enter Auction</a
+				>
+			</div>
+			<h1>Countdown</h1>
+			<p class="meta">Next Auction Countdown</p>
+		</div>
 
-					<a class="btn btn-primary" href="/auction/bid"
-						>Enter Auction</a
-					>
-				</div>
+		<div id="countdown">
+			<div class="cd-box">
+				<p class="numbers days">00</p>
+				<br />
+				<p class="strings timeRefDays">Days</p>
+			</div>
+			<div class="cd-box">
+				<p class="numbers hours">00</p>
+				<br />
+				<p class="strings timeRefHours">Hours</p>
+			</div>
+			<div class="cd-box">
+				<p class="numbers minutes">00</p>
+				<br />
+				<p class="strings timeRefMinutes">Minutes</p>
+			</div>
+			<div class="cd-box">
+				<p class="numbers seconds">00</p>
+				<br />
+				<p class="strings timeRefSeconds">Seconds</p>
 			</div>
 		</div>
-		<!-- <div class="row align-items-center">
-		<div class="col m-0">
-			<div class="sidebar">
-				<a class="active" href="/">Home</a>
-				<a href="/user-profile">Profile</a>
-				<a href="#">Previous Auction</a>
-				<a href="#">Add Car</a>
-				<a href="/contact-us">Contact Us</a>
-				<a href="#">About Us</a>
-			</div>
-		</div>
-		<div class="col">
-			<div class="container">
-				<img
-					class=" img-fluid w-100 h-100"
-					src="../imgs/auctionlogo.png"
-					alt=""
-				/>
-			</div>
-			<div class="">
-				<h2 class="">1 Day 1 Hour 50 Minutes 30 Seconds</h2>
-			</div>
-			<div>
-				<a class="btn btn-primary" href="/auction/info">Auction Info</a>
-
-				<a class="btn btn-primary" href="/auction/bid">Enter Auction</a>
-			</div>
-		</div>
-	</div> -->
+		<!-- end div#countdown -->
 	</div>
-</div>
+	<!-- end div.wrapper -->
+</section>
+
+<script src="../js/date.js"></script>
 <%- include("../includes/end.ejs") %>
