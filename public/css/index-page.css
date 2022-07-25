@@ -1,79 +1,97 @@
 #main-container {
 	background-color: #98c5e4;
+	width: 100%;
+	margin: 0 auto;
+	border: 5px solid black;
+	margin-top: 5%;
 }
 
-/* #links {
-	background-color: #f1f1f1;
+div.wrapper {
+	width: calc(4 * 225px);
+	margin: 0 auto;
 }
 
-
-/* #info {
-	margin-right: 50px;
-} */
-
-a.anchor {
-	text-decoration: none !important;
+span,
+a,
+strong {
+	font-weight: 700;
 }
-ul {
-	list-style: none;
-	padding: 0 !important;
-	margin: 0 !important;
-}
-
-.sidebar {
-	margin: 0;
-	padding: 0;
-	width: 20%;
-	background-color: #f1f1f1;
-	height: 50%;
-}
-
-/* Sidebar links */
-.sidebar a {
-	display: block;
-	color: black;
-	padding: 16px;
+a {
+	transition: 0.2s;
 	text-decoration: none;
+	color: #787878;
+	border-bottom: 1px solid #607d8b;
+}
+a:hover {
+	transition: 0.2s;
+	color: #0d6efd;
+}
+#buttons {
+	display: block;
+}
+/* page layout */
+
+/* header */
+
+/* section */
+
+section h1,
+section p.meta {
+	color: #ffffff;
+	margin-bottom: 15px;
 }
 
-/* Active/current link */
-.sidebar a.active {
-	background-color: #212c28;
-	color: white;
+section hgroup {
+	margin-top: -360px;
 }
 
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-	background-color: #555;
-	color: white;
+section p.numbers {
+	font-size: 6em;
+}
+section p.meta,
+section p.strings {
+	font-size: 1.5em;
+}
+section h1 {
+	font-size: 4.5em;
 }
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-	margin-left: 200px;
-	padding: 1px 16px;
-	height: 100%;
+/* countdown styles */
+
+div#countdown {
+	color: #353535;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-	.sidebar {
-		width: 100%;
-		height: auto;
-		position: relative;
-	}
-	.sidebar a {
-		float: left;
-	}
-	div.content {
-		margin-left: 0;
-	}
+div#countdown p {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
 }
 
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-	.sidebar a {
-		text-align: center;
-		float: none;
-	}
+p.numbers {
+	width: 100%;
+	height: 85%;
+	background: #ffffff;
+	margin-top: -25px;
+	padding-top: 100px;
+}
+
+p.strings {
+	width: 100%;
+	height: auto;
+	padding: 30px 0;
+	background: #0d6efd;
+	color: #ffffff;
+}
+
+div.cd-box {
+	width: 210px;
+	height: 360px;
+	background: #ffffff;
+	float: left;
+	padding: 25px 0 0 0;
+	margin: 30px 15px 0 0;
+	-webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+	-moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+	box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
 }
