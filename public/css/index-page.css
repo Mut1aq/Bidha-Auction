@@ -60,6 +60,8 @@ section h1 {
 
 div#countdown {
 	color: #353535;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 div#countdown p {
@@ -88,10 +90,13 @@ div.cd-box {
 	width: 210px;
 	height: 360px;
 	background: #ffffff;
-	float: left;
+
 	padding: 25px 0 0 0;
 	margin: 30px 15px 0 0;
 	-webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
 	-moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
 	box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+}
+footer {
+	clear: both;
 }
