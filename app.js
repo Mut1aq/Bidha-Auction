@@ -5,6 +5,7 @@ const authRoutes = require("./routes/auth");
 const auctionRoutes = require("./routes/auction");
 const basicRoutes = require("./routes/basic");
 const userRoutes = require("./routes/user");
+const organizerRoutes = require("./routes/organizer");
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(basicRoutes);
 app.use(authRoutes);
 app.use(userRoutes);
+app.use(organizerRoutes);
 app.use("/auction", auctionRoutes);
 
 app.listen(3000, () => {
@@ -27,11 +29,15 @@ app.listen(3000, () => {
 });
 
 /**
+ * ! Add two pics (countdown)
+ * ! Countdown responsive
+ * ! Media Query for Auction/Bid
  * Landing page (Info about webapp, Help section, org or bidder link) Done
  * Auth pages (org) Done
  * Home page (Ads, [clickable]=Count Down(), Search Bar)
  * Car Info
- * Single Auction
+ * Single Auction (cars and info, bid starting 100x, Wishlist)
+ * prev (what cars sold, )
  * Profile page (users, Wallet) Middleware Done
  * Edit Profile page Done
  * Profile page (organizer)

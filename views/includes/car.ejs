@@ -1,0 +1,70 @@
+<section
+	id="signup-container"
+	class="container text-center mt-5 w-100 bg-white"
+>
+	<h2 style="color: rgb(36, 52, 72)" class="">Car Information</h1>
+
+	<div class="row row-cols-1">
+		<div
+			id="carouselExampleControls"
+			class="carousel slide"
+			data-bs-ride="carousel"
+		>
+			<div class="carousel-inner">
+				<% car.imgs.forEach((image,i)=> { %>
+				<div class="carousel-item <%= i === 0 ? 'active' : ''%>">
+					<img
+						src="<%=  image %>"
+						class="d-block my-2"
+						alt=""
+						style="
+							max-height: 1024;
+							width: 100%;
+							transform: scale(1);
+						"
+					/>
+				</div>
+				<%}) %>
+			</div>
+			<% if(car.imgs.length>1) {%>
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carouselExampleControls"
+				data-bs-slide="prev"
+			>
+				<span
+					class="carousel-control-prev-icon"
+					aria-hidden="true"
+				></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#carouselExampleControls"
+				data-bs-slide="next"
+			>
+				<span
+					class="carousel-control-next-icon"
+					aria-hidden="true"
+				></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+
+			<% } %>
+		</div>
+	</div>
+	<div class="row text-center">
+		<h2 style="color: <%= car.exteriorColor %>"><%= car.brand %></h2>
+		<h2><%= car.model %></h2>
+		<h2><%= car.year %></h2>
+		<h2><%= car.exteriorColor %></h2>
+		<h2><%= car.interiorColor %></h2>
+		<h2><%= car.gearType %></h2>
+		<h2><%= car.Fuel %></h2>
+		<h2><%= car.milage %></h2>
+		<h2><%= car.carInspection %></h2>
+		<h2><%= car.notes %></h2>
+	</div>
+</section>

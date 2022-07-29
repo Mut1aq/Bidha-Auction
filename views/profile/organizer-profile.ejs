@@ -1,0 +1,99 @@
+<%- include('../includes/head.ejs') %> <%- include('../includes/header.ejs') %>
+
+<section id="signup-container" class="container mt-5 w-100 bg-white">
+	<h2 id="heading" class="text-center text-grey">Profile</h2>
+
+	<form action="/organizer-signup" method="post">
+		<div class="input-group mb-3">
+			<input
+				style="width: 0auto"
+				required
+				type="text"
+				class="form-control"
+				placeholder="First Name"
+				aria-label="FirstName"
+				aria-describedby="basic-addon1"
+				name="org[firstName]"
+			/>
+			<input
+				style="width: 0auto"
+				required
+				type="text"
+				class="form-control"
+				placeholder="Last Name"
+				aria-label="LastName"
+				aria-describedby="basic-addon1"
+				name="org[lastName]"
+			/>
+		</div>
+
+		<div class="input-group mb-3">
+			<input
+				style="width: 0auto"
+				required
+				type="email"
+				class="form-control"
+				placeholder="Email"
+				aria-label="Email"
+				aria-describedby="basic-addon2"
+				name="org[email]"
+			/>
+
+			<select
+				style="width: 0auto"
+				required
+				class="form-select"
+				aria-label="Default select example"
+				name="org[city]"
+			>
+				<!-- <option disabled selected>City</option> -->
+				<option value="1">Amman</option>
+				<option value="2">Salt</option>
+				<option value="3">Irbid</option>
+			</select>
+		</div>
+
+		<div class="input-group mb-3">
+			<input
+				type="number"
+				placeholder="Phone Number"
+				class="form-control"
+			/>
+		</div>
+
+		<div class="align-items-center">
+			<div class="">
+				<input
+					required
+					type="password"
+					id="inputPassword6"
+					class="form-control"
+					placeholder="Password"
+					aria-describedby="passwordHelpInline"
+					name="org[password]"
+				/>
+				<!-- <button id="submit-button" class="btn btn-primary m-auto mt-3">
+					Change Password
+				</button> -->
+			</div>
+		</div>
+		<div class="input-group mt-3">
+			<textarea
+				required
+				placeholder="Location"
+				name="org[location]"
+				class="form-control"
+				id=""
+				cols="20"
+				rows="5"
+			></textarea>
+		</div>
+		<div id="submit-button" class="text-center">
+			<button type="submit" class="btn btn-primary mt-3">
+				Update Profile
+			</button>
+		</div>
+	</form>
+</section>
+
+<%- include("../includes/car.ejs") %> <%- include("../includes/end.ejs") %>
