@@ -60,13 +60,10 @@ section h1 {
 
 div#countdown {
 	color: #353535;
-	display: flex;
-	flex-wrap: nowrap;
 }
 
 div#countdown p {
 	width: 100%;
-	display: inline-block;
 	text-align: center;
 }
 
@@ -98,5 +95,6 @@ div.cd-box {
 	box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
 }
 footer {
+	margin-top: 10rem;
 	clear: both;
 }

@@ -18,3 +18,21 @@
 #submit-button {
 	margin: auto;
 }
+.bid-container {
+	border-radius: 15px;
+}
+
+#bid-div {
+	margin: 0auto !important;
+}
+
+#add-button {
+	margin-right: 50px;
+}
+#decline-button {
+	margin-left: 50px;
+}
+
+#bid-button {
+	width: 7rem;
+}

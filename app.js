@@ -32,6 +32,7 @@ app.listen(3000, () => {
  * ! Add two pics (countdown)
  * ! Countdown responsive
  * ! Media Query for Auction/Bid
+ * ! Time Left Bid
  * Landing page (Info about webapp, Help section, org or bidder link) Done
  * Auth pages (org) Done
  * Home page (Ads, [clickable]=Count Down(), Search Bar)
