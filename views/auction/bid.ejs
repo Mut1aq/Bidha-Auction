@@ -1,21 +1,61 @@
 <%- include('../includes/head.ejs') %> <%- include('../includes/header.ejs') %>
-<section class="d-flex flex-row justify-content-center m-5 p-5">
+<section class="d-flex flex-row justify-content-center m-5">
 	<div
 		id="signup-container"
 		class="container mt-5 mr-5 auction-flex bg-white"
 	>
-		<h2 id="heading" class="text-center text-grey">
-			<%= auction.cars[0].organizerName %>
-		</h2>
-
 		<%- include("../includes/car.ejs", {car: auction.cars[0]}) %>
 	</div>
-
-	<div
-		id="signup-container"
-		class="container auction-flex mt-5 bg-white bid-info"
-	>
-		<h2 id="heading" class="text-center text-grey">Bid Information</h2>
-	</div>
 </section>
+<section class="m-auto container text-center bg-white bid-container">
+	<div>
+		<h2 class="text-grey">Bid Information</h2>
+	</div>
+	<div>
+		<h4 class="h-4 mt-4">
+			Current Bid: <i style="color: <%= state %>"> <%= currentBid %>$</i>
+		</h4>
+	</div>
+	<div>
+		<form action="/auction/bidding" method="post">
+			<div class="mt-4">
+				<button
+					id="add-button"
+					type="button"
+					class="btn btn-primary mr-3"
+				>
+					+
+				</button>
+				<label class="form-label"
+					><h2 id="bid-amount" class="text-center">100</h2>
+				</label>
+				<button
+					id="decline-button"
+					type="button"
+					class="btn btn-danger ml-3"
+				>
+					-
+				</button>
+			</div>
+			<button id="bid-button" class="btn btn-success mt-1" type="submit">
+				Bid
+			</button>
+		</form>
+	</div>
+
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem
+	cupiditate reprehenderit repellendus accusamus praesentium dolorem sint qui,
+	at adipisci non, est beatae quas. Pariatur maxime iste veniam quidem
+	officia. Odio in quia recusandae commodi, repellendus excepturi sint iusto
+	numquam impedit deleniti eos, explicabo animi quas atque quis? Ad voluptates
+	nesciunt iste odio. Veniam, deleniti. Excepturi dicta alias distinctio
+	animi. Optio reprehenderit voluptas consequatur aliquam in! Dignissimos
+	maxime animi distinctio nostrum repellendus nemo quibusdam explicabo iure
+	provident aspernatur. Nam, iure delectus. Veniam, nostrum ea. Perspiciatis
+	fugit vero possimus rerum nesciunt. Sed eveniet ratione repellendus
+	praesentium possimus perspiciatis natus aliquam ipsa inventore sapiente
+	laborum mollitia, corporis, sint nulla maxime facilis dignissimos provident
+	voluptate rerum dolorem incidunt optio? Laborum ad illum voluptatibus?
+</section>
+<script src="../js/bid.js"></script>
 <%- include("../includes/end.ejs") %>

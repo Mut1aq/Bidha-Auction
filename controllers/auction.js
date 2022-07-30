@@ -105,7 +105,12 @@ exports.getCarInfo = (req, res, next) => {
 	res.render("auction/car", { title: "Car Info", car });
 };
 exports.getAuctionBid = (req, res, next) => {
-	res.render("auction/bid", { title: "Auction Bid", auction });
+	res.render("auction/bid", {
+		title: "Auction Bid",
+		auction,
+		state: "green",
+		currentBid: 200,
+	});
 };
 let auction = {
 	date: new Date("July 11, 2022 03:24:00"),

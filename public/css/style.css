@@ -14,3 +14,6 @@ input::-webkit-inner-spin-button {
 h5 {
 	color: #0a58ca;
 }
+footer {
+	width: 100vh;
+}
