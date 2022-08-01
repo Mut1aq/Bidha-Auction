@@ -73,19 +73,80 @@
 						<li class="nav-item">
 							<a class="nav-link" href="about-us">About Us</a>
 						</li>
+						<li id="search-form">
+							<form class="d-flex">
+								<input
+									class="form-control me-2"
+									type="search"
+									placeholder="Search"
+									aria-label="Search"
+								/>
+								<button
+									class="btn btn-outline-primary"
+									type="submit"
+								>
+									Search
+								</button>
+							</form>
+						</li>
 					</ul>
-					<form class="d-flex">
-						<input
-							class="form-control me-2"
-							type="search"
-							placeholder="Search"
-							aria-label="Search"
-						/>
-						<button class="btn btn-outline-primary" type="submit">
-							Search
-						</button>
-					</form>
+					<div id="auth-links" class="d-flex">
+						<div class="dropdown auth-buttons">
+							<button
+								class="btn btn-primary dropdown-toggle"
+								type="button"
+								id="dropdownMenuButton1"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Sign In
+							</button>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="dropdownMenuButton1"
+							>
+								<li class="">
+									<a
+										class="dropdown-item"
+										href="/organizer-signin"
+										>Organizer Sign In</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="dropdown auth-buttons">
+							<button
+								class="btn btn-success dropdown-toggle"
+								type="button"
+								id="dropdownMenuButton1"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Sign Up
+							</button>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="dropdownMenuButton1"
+							>
+								<li class="">
+									<a class="dropdown-item" href="/user-signup"
+										>Bidder Sign Up</a
+									>
+								</li>
+								<li class="">
+									<a class="dropdown-item" href="/user-signup"
+										>Bidder Sign Up</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<a href="" class="btn btn-danger auth-buttons"
+							>Logout</a
+						>
+					</div>
 				</div>
 			</div>
 		</nav>
 	</header>
+</body>

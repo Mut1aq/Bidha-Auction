@@ -4,7 +4,7 @@
 		id="signup-container"
 		class="container mt-5 mr-5 auction-flex bg-white"
 	>
-		<%- include("../includes/car.ejs", {car: auction.cars[0]}) %>
+		<%- include("../includes/car.ejs", {cars: [auction.cars[0]]}) %>
 	</div>
 </section>
 <section class="m-auto container text-center bg-white bid-container">
