@@ -1,24 +1,26 @@
-<section
-	id="signup-container"
-	class="container text-center mt-5 w-100 bg-white"
->
-	<h2 style="color: rgb(36, 52, 72)" class="">Car Information</h1>
+  <% for(let car of cars) { %>
+		<h2 style="color: rgb(36, 52, 72)" class="text-center">Car Information</h1>
 
-	<div class="row row-cols-1">
+ <section
+	id="signup-container"
+	class="container text-center mt-5 w-100 bg-white d-flex justify-content-between"
+>
+
+	<div class="row">
 		<div
 			id="carouselExampleControls"
 			class="carousel slide"
 			data-bs-ride="carousel"
-		>
+ 		>
 			<div class="carousel-inner">
 				<% car.imgs.forEach((image,i)=> { %>
-				<div class="carousel-item <%= i === 0 ? 'active' : ''%>">
+				<div style="min-width: 80%;" class="carousel-item <%= i === 0 ? 'active' : ''%>">
 					<img
 						src="<%=  image %>"
 						class="d-block my-2"
 						alt=""
 						style="
-							max-height: 1024;
+							max-height: 1024px;
 							width: 100%;
 							transform: scale(1);
 						"
@@ -68,3 +70,6 @@
 		<h2><%= car.notes %></h2>
 	</div>
 </section>
+<% if(cars.length > 1) { %>
+<hr>
+	<% }}  %>
