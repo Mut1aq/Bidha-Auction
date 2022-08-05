@@ -97,4 +97,5 @@ div.cd-box {
 footer {
 	margin-top: 10rem;
 	clear: both;
+	vertical-align: baseline;
 }

@@ -16,4 +16,5 @@ h5 {
 }
 footer {
 	width: 100vh;
+	vertical-align: baseline;
 }
