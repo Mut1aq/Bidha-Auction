@@ -1,0 +1,16 @@
+<%- include('../includes/head.ejs') %> <%- include('../includes/header.ejs') %>
+
+<section id="signup-container" class="container mt-5 w-100 bg-white">
+	<h2 id="heading" class="text-center text-grey">
+		<i class="bx bxs-heart"></i>Wishlist
+	</h2>
+	<div class="container mt-5">
+		<h3 id="heading" class="text-center" style="color: #ff3832 !important">
+			BMW from Auction 8
+		</h3>
+		<br />
+		<%- include("../includes/car.ejs", {cars: cars}) %>
+	</div>
+</section>
+
+<%- include("../includes/end.ejs") %>
