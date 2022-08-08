@@ -4,6 +4,8 @@ const adminController = require("../controllers/admin");
 
 const router = express.Router();
 
+router.get("/", adminController.getSignin);
+
 router.get("/dashboard", adminController.getDashboard);
 
 router.get("/profile", adminController.getProfile);

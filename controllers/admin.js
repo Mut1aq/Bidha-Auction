@@ -7,3 +7,6 @@ exports.getProfile = (req, res, next) => {
 exports.getOrganizerRequests = (req, res, next) => {
 	res.render("admin/admin-requests", { title: "Organizer Requests" });
 };
+exports.getSignin = (req, res, next) => {
+	res.render("admin/admin-signin", { title: "Sign In" });
+};
