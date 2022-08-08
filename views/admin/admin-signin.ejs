@@ -1,0 +1,33 @@
+<%- include('../includes/admin-head.ejs') %>
+<link rel="stylesheet" href="../css/signin.css" />
+</head>
+<body>
+<section class="home-section">
+	<form action="/admin-signin" method="post">
+		<div class="form">
+			<div class="title">Sign in</div>
+
+			<div class="input-container ic2">
+				<input id="email" class="input" type="text" placeholder=" " />
+				<div class="cut cut-short"></div>
+				<label for="email" class="placeholder">Email</label>
+			</div>
+			<div class="input-container ic2">
+				<input
+					id="password"
+					class="input"
+					type="password"
+					name="admin[password]"
+					placeholder=" "
+				/>
+				<div class="cut"></div>
+				<label for="password" class="placeholder">Password</label>
+			</div>
+
+			<button type="text" class="submit">Signin</button>
+		</div>
+	</form>
+</section>
+
+</body>
+</html>
