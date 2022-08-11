@@ -12,4 +12,8 @@ router.get("/profile", adminController.getProfile);
 
 router.get("/organizer-requests", adminController.getOrganizerRequests);
 
+// router.post("/select-cars", adminController.postSelectCars);
+
+router.post("/auction", adminController.postAddAuction);
+
 module.exports = router;

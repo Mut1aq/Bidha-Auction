@@ -24,3 +24,22 @@ exports.getOrganizerProfile = (req, res, next) => {
 		car,
 	});
 };
+exports.postAddCar = async (req, res, next) => {
+	const addedCar = {
+		...req.body.car,
+		author: req.user._id,
+		imgs: req.files.map((f) => ({
+			url: f.path,
+			filename: f.filename,
+		})),
+	};
+
+	const car = new Car(addedCar);
+	await car.save();
+	res.redirect("/auction");
+};
+/*
+car {
+	author: req.user.id
+}
+*/
